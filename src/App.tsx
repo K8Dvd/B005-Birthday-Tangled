@@ -406,7 +406,7 @@ function App() {
               <div className="painting-frame">
                 {[0, 1, 2, 3].map((k) => (
                   <Flower key={k} hue={k} className="frame-flower"
-                    style={{ top: k < 2 ? t : "auto", bottom: k >= 2 ? "-18px" : "auto", left: k % 2 === 0 ? "-18px" : "auto", right: k % 2 === 1 ? "-18px" : "auto" }} />
+                    style={{ top: k < 2 ? "-18px" : "auto", bottom: k >= 2 ? "-18px" : "auto", left: k % 2 === 0 ? "-18px" : "auto", right: k % 2 === 1 ? "-18px" : "auto" }} />
                 ))}
                 <Flower hue={2} className="frame-flower sm" style={{ top: "-12px", left: "calc(50% - 15px)" }} />
                 <Flower hue={1} className="frame-flower sm" style={{ bottom: "-12px", left: "calc(50% - 15px)" }} />
