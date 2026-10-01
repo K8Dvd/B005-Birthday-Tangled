@@ -404,7 +404,7 @@ function App() {
             <button key={p.image} type="button" className={`painting-card p${i % 3}`}
               onClick={() => setPhoto(i)} aria-label={`Open memory ${i + 1}`}>
               <div className="painting-frame">
-                {[["-18px", "-18px"], ["auto", "-18px"], ["-18px", "auto"], ["auto", "auto"]].map(([t, l], k) => (
+                {[0, 1, 2, 3].map((k) => (
                   <Flower key={k} hue={k} className="frame-flower"
                     style={{ top: k < 2 ? t : "auto", bottom: k >= 2 ? "-18px" : "auto", left: k % 2 === 0 ? "-18px" : "auto", right: k % 2 === 1 ? "-18px" : "auto" }} />
                 ))}
